@@ -1,0 +1,45 @@
+{
+  "_说明": "这是配置模板。复制成 config.json 后按你的环境改；config.json 已被 .gitignore 排除，不会进仓库。",
+  "connections": {
+    "lmstudio": {"base_url": "http://127.0.0.1:12345/v1", "api_key": ""}
+  },
+  "vision_role": {"provider": "lmstudio", "model": ""},
+  "text_role": {"provider": "lmstudio", "model": ""},
+
+  "vision_timeout": 300.0,
+  "vision_max_tokens": 2048,
+  "llm_timeout": 600.0,
+  "disable_thinking": true,
+
+  "whisper_backend": "auto",
+  "whisper_exe": "",
+  "whisper_model": "small",
+  "whisper_model_dir": "",
+  "whisper_language": "zh",
+  "whisper_compute_type": "int8",
+  "whisper_cache_home": "",
+
+  "frames_backend": "auto",
+  "probe_backend": "auto",
+  "analysis_video_exe": "",
+  "ffmpeg_exe": "ffmpeg",
+  "ffprobe_exe": "ffprobe",
+
+  "read_long_edge": 768,
+  "max_frames_auto": true,
+  "max_frames": 80,
+  "max_frames_floor": 60,
+  "max_frames_cap": 240,
+
+  "export_mode_default": "light",
+  "export_root": "",
+  "export_layout": "by_video_batch",
+  "export_video_template": "{video}",
+  "export_batch_template": "{date}-{time}",
+  "export_name_template": "{title}",
+
+  "portable_data": false,
+  "reuse_cache": true,
+  "vision_batch_limit": 0,
+  "enable_vision": true
+}

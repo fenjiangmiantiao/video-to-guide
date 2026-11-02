@@ -1,0 +1,22 @@
+[project]
+name = "video-to-guide"
+version = "0.1.0"
+description = "把软件操作录屏转换为带截图和时间戳的图文操作手册"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+gui = ["PySide6>=6.6"]
+
+[project.scripts]
+vtg = "video_to_guide.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,97 @@
+{
+  "video": "real_manual.mkv",
+  "duration": 72,
+  "note": "真实软件（Windows 记事本）录屏，pywinauto 驱动。A3 的实际动作是 Ctrl+A 全选后重新输入修改后的全文（不是只改第二行），标注已按实际动作修正。  ideal_steps 是\"手册该怎么组织\"的层面：events 是原子操作，steps 是读者该连着做的步骤。",
+  "expected_actions": [
+    {
+      "id": "A1",
+      "title": "打开记事本",
+      "t": 4,
+      "tol": 5,
+      "keywords": [
+        "记事本"
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "输入三行文字",
+      "t": 12,
+      "tol": 6,
+      "keywords": [
+        "输入",
+        "第一行",
+        "文字"
+      ]
+    },
+    {
+      "id": "A3",
+      "title": "全选并重新输入修改后的内容",
+      "t": 19,
+      "tol": 6,
+      "keywords": [
+        "全选",
+        "重写",
+        "重新输入",
+        "修改"
+      ]
+    },
+    {
+      "id": "A4",
+      "title": "保存文件",
+      "t": 30,
+      "tol": 8,
+      "keywords": [
+        "保存"
+      ]
+    },
+    {
+      "id": "A5",
+      "title": "重新打开确认",
+      "t": 50,
+      "tol": 8,
+      "keywords": [
+        "打开",
+        "确认",
+        "重新",
+        "查看"
+      ]
+    }
+  ],
+  "ideal_steps": [
+    {
+      "id": "S1",
+      "title": "打开记事本",
+      "event_ids": [
+        "A1"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "输入三行文字",
+      "event_ids": [
+        "A2"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "修改文档内容",
+      "event_ids": [
+        "A3"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "保存文件",
+      "event_ids": [
+        "A4"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "确认保存结果",
+      "event_ids": [
+        "A5"
+      ]
+    }
+  ]
+}

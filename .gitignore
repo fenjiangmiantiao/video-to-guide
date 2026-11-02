@@ -1,0 +1,42 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# 运行产物（体积大，不入库）
+runs/
+
+# 媒体与缓存
+cache/
+*.wav
+*.mp4
+*.mkv
+*.srt
+
+# 编辑器/系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# 本机配置（含本机绝对路径与个人设置，不入库）
+config.json
+
+# PyInstaller 构建中间产物
+*.spec
+config.json.bak
+
+# 本地配置备份（含本机绝对路径）
+config.bak-*.json
+config*.bak
+AGENTS.md
+docs/release-checklist.md
+
+# 打包产物
+*.zip
+dist/
+build/
